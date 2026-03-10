@@ -9,7 +9,7 @@ export const Skills = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16"
+          className="mb-16 text-center"
         >
           <h2 className="text-xl font-mono text-blue-400 uppercase tracking-[0.3em] mb-4">Technical Stack</h2>
           <h3 className="text-4xl md:text-5xl font-bold text-slate-100">Skills & Expertise</h3>

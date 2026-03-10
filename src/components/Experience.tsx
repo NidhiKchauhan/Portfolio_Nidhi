@@ -152,30 +152,6 @@ export const Experience = () => {
             ))}
           </div>
         </div>
-
-        {/* Impact Summary */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-32 p-10 rounded-[2rem] bg-gradient-to-br from-blue-600/10 via-slate-900/50 to-emerald-600/10 border border-blue-500/20 backdrop-blur-xl relative overflow-hidden"
-        >
-          <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl -mr-32 -mt-32" />
-          <div className="relative z-10">
-            <h4 className="text-2xl font-bold text-slate-100 mb-8 flex items-center gap-3">
-              <Briefcase className="text-blue-400" size={24} />
-              Career Impact
-            </h4>
-            <div className="grid sm:grid-cols-2 gap-4">
-              {resumeData.achievements.map((ach, i) => (
-                <div key={i} className="p-5 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/[0.07] transition-colors">
-                  <div className="text-blue-400 font-mono text-sm mb-1">{ach.label}</div>
-                  <div className="text-slate-200 text-sm leading-relaxed">{ach.context}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
