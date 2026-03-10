@@ -1,0 +1,128 @@
+{
+  "basics": {
+    "name": "Nidhi Chauhan",
+    "title": "Salesforce Developer / Administrator",
+    "summary": "I design systems that make complex processes simple.\n\nExperienced with building scalable Salesforce solutions across enterprise, government, and non-profit environments. My work sits at the intersection of developing automation, data integrity, and business workflow optimisation.\n\nMy career goal is simple:\nBuild intelligent, scalable systems that empower organisations to move faster and make better decisions.\n\nAlways learning. Always improving.",
+    "location": "Ottawa, Ontario, Canada",
+    "email": "nidhikchauhan0411@gmail.com",
+    "links": [
+      { "label": "LinkedIn", "url": "https://www.linkedin.com/in/nkchauhan" },
+      { "label": "Trailblazer", "url": "https://www.salesforce.com/trailblazer/nidhikc0411" }
+    ]
+  },
+  "experience": [
+    {
+      "company": "The Canadian Nurses Protective Society (CNPS)",
+      "role": "Salesforce Developer",
+      "dates": "July 2024 - Present",
+      "location": "Ottawa, Ontario, Canada",
+      "bullets": [
+        "Acted as primary liaison between business stakeholders and technical teams to align Salesforce enhancements with compliance and regulatory needs.",
+        "Designed and deployed 10+ Lightning Web Components (LWC) and Apex triggers to automate business logic, enforce data validation, and streamline internal workflows across the Salesforce platform.",
+        "Configure and manage declarative Salesforce architecture, including custom objects, fields, record types, Lightning page layouts, validation rules, and approval processes aligned with evolving operational requirements.",
+        "Managed and optimised a 50,000+ recipient email automation system using Salesforce Flow and built an email bounce management system using Apex class and trigger.",
+        "Generated certificate PDFs using APTK weaver and Visualforce pages, streamlining document automation using Apex class, and delivery using Flows and LWC.",
+        "Integrated Salesforce with third-party platforms, ensuring real-time data sync and zero data loss across systems.",
+        "Ensured code quality by adhering to Apex best practices, comprehensive test class coverage, and multi-scenario (positive/negative) testing.",
+        "Built reports and dashboards to provide stakeholders with actionable insights and support data-driven decision-making.",
+        "Created custom APIs in Apex (using HTTP request/response and secure endpoints) to integrate Salesforce with external platforms, enabling real-time data synchronisation with zero data loss.",
+        "Implemented duplicate management, validation rules, and data cleansing strategies, improving data quality KPIs by 30%.",
+        "Administered roles, profiles, and permission sets, ensuring secure and compliant data access.",
+        "Delivered knowledge transfer sessions, design walkthroughs, and technical documentation for internal IT staff, ensuring sustainability and continuity.",
+        "Partner with cross-functional stakeholders to gather requirements, define user stories, and deliver Agile sprint enhancements supporting regulatory and operational needs."
+      ]
+    },
+    {
+      "company": "Agriculture and Agri-Food Canada",
+      "role": "AI Developer",
+      "dates": "May 2024 - July 2024",
+      "location": "Ottawa, Ontario, Canada",
+      "bullets": [
+        "Engineered an end-to-end table extraction automation system leveraging Azure OpenAI API, reducing manual PDF data processing time and improving data accessibility for non-technical stakeholders.",
+        "Built and deployed an intuitive Streamlit web interface that enables users to extract structured data from PDFs seamlessly, eliminating the need for technical expertise to interact with AI-powered pipelines.",
+        "Integrated Azure OpenAI API with a custom Python backend to power intelligent document parsing, ensuring accurate table recognition and structured data output at scale."
+      ]
+    },
+    {
+      "company": "Agriculture and Agri-Food Canada",
+      "role": "Data Analyst Co-op",
+      "dates": "September 2023 - May 2024",
+      "location": "Ottawa, Ontario, Canada",
+      "bullets": [
+        "Creating Power BI visualizations, Dashboards, and KPI scorecards, meeting department requirements, and providing solution-oriented data modification with reporting large datasets for agriculture and healthcare.",
+        "Enhanced 50+ Power BI reports and dashboards to achieve WCAG 2.0 level AA conformance, significantly improving data accessibility across the department by 70%.",
+        "Authored comprehensive WCAG guidelines for Power BI to standardize accessibility practices within the department.",
+        "Developing complex calculated measures and custom metrics using Data Analysis Expression Language (DAX) for in-depth data analysis."
+      ]
+    },
+    {
+      "company": "Trend Micro",
+      "role": "Software Developer Intern",
+      "dates": "May 2023 - August 2023",
+      "location": "Ottawa, Ontario, Canada",
+      "bullets": [
+        "Engineered 2 production-grade automation solutions using Python and Shell scripting on AWS (Lambda, EC2, S3, CloudFormation, SSM), eliminating manual toil and significantly accelerating engineering workflows across the development team.",
+        "Spearheaded modernisation of 4 legacy cybersecurity products by migrating infrastructure from AWS OpsWorks to AWS Systems Manager, implementing reusable Chef Recipes and Cookbooks to standardise and future-proof the tech stack.",
+        "Reduced ticket resolution time by 60% by architecting an AWS-native automation system for Java Flight Recorder (JFR) logging, dramatically improving developer productivity and incident response times.",
+        "Established a robust CI/CD pipeline using Jenkins and AWS CloudFormation, automating end-to-end deployment orchestration to ensure reliable, repeatable, and scalable release workflows for automation solutions.",
+        "Collaborated cross-functionally with cybersecurity and DevOps engineers to identify operational bottlenecks, translating business needs into scalable cloud infrastructure solutions on AWS.",
+        "Optimised cloud infrastructure cost and reliability by leveraging AWS CloudFormation templates for infrastructure-as-code (IaC), enabling consistent environment provisioning and reducing configuration drift across deployments."
+      ]
+    },
+    {
+      "company": "Accenture",
+      "role": "Application Development Analyst - Salesforce Developer",
+      "dates": "June 2022 - August 2022",
+      "location": "Delhi, India",
+      "bullets": [
+        "Delivered end-to-end Salesforce & Vlocity CPQ solutions for enterprise clients, owning the full lifecycle — requirements analysis, estimation, design, development, testing, and deployment — in a fast-paced Agile environment.",
+        "Configured 100+ products in Vlocity's Enterprise Product Catalog (EPC), leveraging Picklists, Product Attributes, Attribute Categories, Product Bundling, Pricing, and Product Lifecycle management to streamline complex telecom product offerings.",
+        "Mapped 100+ technical products to 50+ commercial products by identifying critical business requirements and implementing CPQ features, ensuring seamless alignment between front-end quoting and back-end systems.",
+        "Built dynamic guided user experiences using OmniScripts, DataRaptors, Vlocity Cards, and Integration Procedures, integrated with REST/SOAP APIs to automate customer onboarding, quoting, and order management workflows.",
+        "Engineered custom Salesforce objects and data models using Picklists, Lookup relationships, Junction Objects, Master-Detail relationships, and Formula Fields to meet complex enterprise business logic requirements.",
+        "Administered Salesforce platform end-to-end — managing users, roles, profiles, permission sets, approval processes, validation rules, and security settings to maintain governance and compliance across the org.",
+        "Designed and maintained real-time Reports and Dashboards to deliver actionable business insights to stakeholders, enabling data-driven decision-making across sales and operations teams.",
+        "Executed data loading, migration, and integration tasks using Data Import Wizard, Salesforce Workbench, and IDX Workbench, ensuring data integrity and accuracy across system migrations.",
+        "Supported Agile delivery and documentation by contributing to sprint planning, story estimations, root cause analysis, defect resolution, and producing build books and deployment guides for production releases."
+      ]
+    },
+    {
+      "company": "Accenture",
+      "role": "Application Development Associate",
+      "dates": "February 2021 - May 2022",
+      "location": "Delhi, India",
+      "bullets": [
+        "Achieved Salesforce Certification via structured Trailhead training, gaining validated proficiency in platform configuration, automation, security, and CRM/ Sales Cloud fundamentals.",
+        "Built a hands-on Sales Cloud CRM project, applying core concepts including Lead & Opportunity management, custom objects, validation rules, and dashboards to simulate real-world enterprise workflows.",
+        "Developed SQL and data management skills to support querying, reporting, and data integrity tasks — laying the technical foundation for a direct transition into enterprise Salesforce delivery as an analyst."
+      ]
+    }
+  ],
+  "achievements": [
+    { "item": "50K+", "label": "Email Automation Reach", "context": "Designed Salesforce Flow automation supporting large-scale email workflows and operational processes." },
+    { "item": "30%", "label": "Data Quality Improvement", "context": "Implemented duplicate management, validation rules, and data cleansing strategies across Salesforce." },
+    { "item": "10+", "label": "Custom Salesforce Components", "context": "Developed Lightning Web Components and Apex triggers to automate workflows and enforce business logic." },
+    { "item": "4x", "label": "Salesforce Certified", "context": "Administrator, AI Associate, Industries CPQ Developer, and OmniStudio Developer certifications." }
+  ],
+  "skills": {
+    "Salesforce Development": ["Apex", "Lightning Web Components (LWC)", "Salesforce Flows", "Visualforce", "SOQL", "REST API Integration", "Custom APIs"],
+    "Salesforce Administration": ["User Management", "Profiles & Permission Sets", "Validation Rules", "Approval Processes", "Reports & Dashboards", "Data Management", "Security Model"],
+    "Salesforce Consulting": ["Requirements Gathering", "Business Process Analysis", "CRM Solution Design", "Stakeholder Collaboration", "Agile/Scrum Delivery", "Technical Documentation", "External system integrations"],
+    "Salesforce Architecture": ["Sales Cloud", "CPQ", "OmniStudio", "DataRaptors", "Integration Procedures"],
+    "Data & AI": ["Power BI", "Python", "Azure OpenAI", "SQL", "Machine Learning"]
+  },
+  "education": [
+    { "institution": "University of Ottawa", "degree": "Master of Computer Science (Applied AI)", "dates": "2022 - 2024" },
+    { "institution": "Guru Gobind Singh Indraprastha University", "degree": "B.Tech, Computer Engineering", "dates": "2016 - 2020" }
+  ],
+  "certifications": [
+    "Salesforce Certified Administrator",
+    "Salesforce Certified Industries CPQ Developer",
+    "Salesforce Certified OmniStudio Developer",
+    "Salesforce Certified AI Associate"
+  ],
+  "publications": [
+    "Comparative Analysis of ML Algorithms for COVID-19 Forecasting",
+    "Severity-Based Classification of Code Smells in Kotlin/Java"
+  ]
+}
