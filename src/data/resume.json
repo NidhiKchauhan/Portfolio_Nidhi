@@ -123,7 +123,13 @@
     "Salesforce Certified AI Associate"
   ],
   "publications": [
-    "Comparative Analysis of ML Algorithms for COVID-19 Forecasting",
-    "Severity-Based Classification of Code Smells in Kotlin/Java"
+    {
+      "title": "Comparative Analysis of ML Algorithms for COVID-19 Forecasting",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-19-0151-5_6"
+    },
+    {
+      "title": "Severity-Based Classification of Code Smells in Kotlin/Java",
+      "url": "https://link.springer.com/article/10.1007/s13369-021-06077-6"
+    }
   ]
 }

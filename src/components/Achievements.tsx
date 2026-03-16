@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Trophy, Star, Zap, Award } from 'lucide-react';
+import { Trophy, Star, Zap, Award, ExternalLink } from 'lucide-react';
 import resumeData from '../data/resume.json';
 
 export const Achievements = () => {
@@ -74,10 +74,17 @@ export const Achievements = () => {
             <h4 className="text-xl font-bold text-slate-100 mb-6">Publications</h4>
             <div className="space-y-4">
               {resumeData.publications.map((pub) => (
-                <div key={pub} className="flex gap-3 text-sm text-slate-400">
-                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
-                  {pub}
-                </div>
+                <a 
+                  key={pub.title} 
+                  href={pub.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex gap-3 text-sm text-slate-400 hover:text-blue-400 transition-colors group"
+                >
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0 group-hover:scale-125 transition-transform" />
+                  <span className="flex-1">{pub.title}</span>
+                  <ExternalLink size={14} className="shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </a>
               ))}
             </div>
           </motion.div>
