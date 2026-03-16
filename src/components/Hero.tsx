@@ -1,9 +1,17 @@
 import { motion } from 'motion/react';
-import { ArrowDown, Mail, Linkedin, Globe } from 'lucide-react';
+import { ArrowDown, Mail, Linkedin, Globe, Github } from 'lucide-react';
 import resumeData from '../data/resume.json';
 import { generateResumePDF } from '../utils/generateResume';
 
 export const Hero = () => {
+  const getIcon = (label: string) => {
+    switch (label.toLowerCase()) {
+      case 'linkedin': return <Linkedin size={18} />;
+      case 'github': return <Github size={18} />;
+      default: return <Globe size={18} />;
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-32 pb-5 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto z-10 w-full">
@@ -91,7 +99,7 @@ export const Hero = () => {
                   rel="noopener noreferrer"
                   className="hover:text-blue-400 transition-all flex items-center gap-2 text-sm font-semibold uppercase tracking-widest hover:scale-105"
                 >
-                  {link.label === 'LinkedIn' ? <Linkedin size={18} /> : <Globe size={18} />}
+                  {getIcon(link.label)}
                   {link.label}
                 </a>
               ))}

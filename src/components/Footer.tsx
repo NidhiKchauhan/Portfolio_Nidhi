@@ -1,10 +1,18 @@
 import { motion } from 'motion/react';
-import { Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
+import { Github, Linkedin, Mail, ArrowUp, Globe } from 'lucide-react';
 import resumeData from '../data/resume.json';
 
 export const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const getIcon = (label: string) => {
+    switch (label.toLowerCase()) {
+      case 'linkedin': return <Linkedin size={20} />;
+      case 'github': return <Github size={20} />;
+      default: return <Globe size={20} />;
+    }
   };
 
   return (
@@ -35,7 +43,7 @@ export const Footer = () => {
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-slate-300 hover:bg-blue-600 hover:text-white transition-all"
               >
-                {link.label === 'LinkedIn' ? <Linkedin size={20} /> : <Github size={20} />}
+                {getIcon(link.label)}
               </a>
             ))}
           </div>

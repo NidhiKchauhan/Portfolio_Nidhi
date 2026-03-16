@@ -29,23 +29,23 @@ export const Navbar = () => {
 
   return (
     <>
-      <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-blue-500 origin-left z-[60]"
-        style={{ scaleX }}
-      />
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-slate-950/80 backdrop-blur-md py-4 border-b border-white/10' : 'bg-transparent py-6'
+        className={`fixed bottom-0 left-0 right-0 z-50 transition-all duration-300 ${
+          isScrolled ? 'bg-slate-950/90 backdrop-blur-md py-4 border-t border-white/10' : 'bg-slate-950/80 backdrop-blur-sm py-5 border-t border-white/5'
         }`}
       >
+        <motion.div
+          className="absolute top-0 left-0 right-0 h-0.5 bg-blue-500 origin-left"
+          style={{ scaleX }}
+        />
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           <motion.a
             href="#"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400"
+            className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-400 to-emerald-400 flex items-center justify-center shadow-lg shadow-cyan-500/20"
           >
-            NC
+            <span className="sr-only">NC</span>
           </motion.a>
 
           {/* Desktop Nav */}
@@ -85,9 +85,9 @@ export const Navbar = () => {
         {/* Mobile Nav */}
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="absolute top-full left-0 right-0 bg-slate-900 border-b border-white/10 p-6 flex flex-col gap-6 md:hidden"
+            className="absolute bottom-full left-0 right-0 bg-slate-900 border-t border-white/10 p-6 flex flex-col gap-6 md:hidden"
           >
             {navLinks.map((link) => (
               <a
