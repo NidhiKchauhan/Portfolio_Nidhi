@@ -2,7 +2,6 @@ import { motion, useScroll, useSpring } from 'motion/react';
 import { Menu, X, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import resumeData from '../data/resume.json';
-import { generateResumePDF } from '../utils/generateResume';
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,12 +29,12 @@ export const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed bottom-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-slate-950/90 backdrop-blur-md py-4 border-t border-white/10' : 'bg-slate-950/80 backdrop-blur-sm py-5 border-t border-white/5'
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          isScrolled ? 'bg-slate-950/90 backdrop-blur-md py-4 border-b border-white/10' : 'bg-slate-950/80 backdrop-blur-sm py-5 border-b border-white/5'
         }`}
       >
         <motion.div
-          className="absolute top-0 left-0 right-0 h-0.5 bg-blue-500 origin-left"
+          className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-500 origin-left"
           style={{ scaleX }}
         />
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -45,7 +44,7 @@ export const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-400 to-emerald-400 flex items-center justify-center shadow-lg shadow-cyan-500/20"
           >
-            <span className="sr-only">NC</span>
+            <span className="text-slate-900 font-bold text-sm">NC</span>
           </motion.a>
 
           {/* Desktop Nav */}
@@ -62,15 +61,16 @@ export const Navbar = () => {
                 {link.name}
               </motion.a>
             ))}
-            <motion.button
+            <motion.a
+              href="/Resume_NidhiChauhan.pdf"
+              download="Resume_NidhiChauhan.pdf"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               className="px-5 py-2 rounded-full bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium transition-all shadow-lg shadow-blue-500/20 flex items-center gap-2"
-              onClick={generateResumePDF}
             >
               <Download size={16} />
               Resume
-            </motion.button>
+            </motion.a>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -85,9 +85,9 @@ export const Navbar = () => {
         {/* Mobile Nav */}
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="absolute bottom-full left-0 right-0 bg-slate-900 border-t border-white/10 p-6 flex flex-col gap-6 md:hidden"
+            className="absolute top-full left-0 right-0 bg-slate-900 border-b border-white/10 p-6 flex flex-col gap-6 md:hidden"
           >
             {navLinks.map((link) => (
               <a
@@ -99,15 +99,15 @@ export const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <button
-              className="w-full py-3 rounded-xl bg-blue-600 text-white font-medium"
-              onClick={() => {
-                setIsMobileMenuOpen(false);
-                generateResumePDF();
-              }}
+            <a
+              href="/Resume_NidhiChauhan.pdf"
+              download="Resume_NidhiChauhan.pdf"
+              className="w-full py-3 rounded-xl bg-blue-600 text-white font-medium flex items-center justify-center gap-2"
+              onClick={() => setIsMobileMenuOpen(false)}
             >
+              <Download size={18} />
               Download Resume
-            </button>
+            </a>
           </motion.div>
         )}
       </nav>

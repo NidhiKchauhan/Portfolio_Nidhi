@@ -1,7 +1,6 @@
 import { motion } from 'motion/react';
 import { ArrowDown, Mail, Linkedin, Globe, Github } from 'lucide-react';
 import resumeData from '../data/resume.json';
-import { generateResumePDF } from '../utils/generateResume';
 
 export const Hero = () => {
   const getIcon = (label: string) => {
@@ -77,12 +76,13 @@ export const Hero = () => {
                 View Journey
                 <ArrowDown size={20} className="group-hover:translate-y-1 transition-transform" />
               </a>
-              <button
-                onClick={generateResumePDF}
-                className="px-10 py-5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-slate-200 font-bold transition-all backdrop-blur-sm hover:-translate-y-1"
+              <a
+                href="/Resume_NidhiChauhan.pdf"
+                download="Resume_NidhiChauhan.pdf"
+                className="px-10 py-5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-slate-200 font-bold transition-all backdrop-blur-sm hover:-translate-y-1 flex items-center justify-center"
               >
                 Download Resume
-              </button>
+              </a>
             </motion.div>
 
             <motion.div
